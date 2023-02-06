@@ -1,13 +1,13 @@
 import textInput from "@/assets/css/components/input.module.css";
 
 // テキストフィールドの受け取る型
-interface Props {
+type Props = {
   title: string;
   name: string; // サーバーサイドが受け取る時の変数名
   type: "text" | "email" | "password"; // text or passwordの二択
-  value: string; // 親から受け取るステート
+  pattern: string; // 正規表現
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // ステートを変更時の関数
-}
+};
 
 // メールアドレスとパスワード用
 const TextInput = (props: Props) => {
@@ -20,7 +20,8 @@ const TextInput = (props: Props) => {
         className={textInput["text-input"]}
         name={props.name}
         type={props.type}
-        value={props.value}
+        defaultValue=""
+        
         onChange={props.onChange}
       />
     </div>

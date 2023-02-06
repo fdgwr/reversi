@@ -1,12 +1,12 @@
 import button from "@/assets/css/components/button.module.css";
 
 // ボタンコンポーネントの受け取る型定義
-interface Props {
+type Props = {
   title: string; // ボタンのタイトル
   type: "submit" | "button"; // ボタンのタイプ
   disabled: boolean; // 非活性化にするか否か
   onClick: () => void; // クリック時のアクション
-}
+};
 
 // ボタンの部品
 const Button = (props: Props) => {

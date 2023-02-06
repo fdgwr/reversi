@@ -1,9 +1,9 @@
 import roundFrame from "@/assets/css/components/frame.module.css";
 
-interface Props {
+type Props = {
   className: string;
   children?: React.ReactNode;
-}
+};
 
 const RoundFrame = (props: Props) => {
   return (

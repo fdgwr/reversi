@@ -1,12 +1,14 @@
-import React from "react";
+import React, { FormEventHandler } from "react";
 import ReactDOM from "react-dom/client";
 import {
   BUTTON,
   EMAIL,
   EMAIL_LABEL,
+  EMAIL_PATTERN,
   LOGIN_LABEL,
   PASSWORD,
   PASSWORD_LABEL,
+  PASSWORD_PATTERN,
   RESET_PASSWORD_LINK,
 } from "@/assets/message";
 import { Button, Form, Menu, RoundFrame, TextInput } from "@/components";
@@ -19,14 +21,14 @@ const SignIn = () => {
   return (
     <div className={style.container}>
       <h1>Reversi</h1>
-      <Menu />
+      <Menu isSignIn={true} isSignUp={false} />
       <Form action={""} method={""} autoComplete={""}>
         <RoundFrame className="round-frame_double">
           <TextInput
             title={EMAIL_LABEL}
             name={EMAIL}
             type={EMAIL}
-            value={""}
+            pattern={EMAIL_PATTERN}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               console.log(`メールアドレス：${e.target.value}`)
             }
@@ -35,7 +37,7 @@ const SignIn = () => {
             title={PASSWORD_LABEL}
             name={PASSWORD}
             type={PASSWORD}
-            value={""}
+            pattern={PASSWORD_PATTERN}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               console.log(`パスワード${e.target.value}`)
             }

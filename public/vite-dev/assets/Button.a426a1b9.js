@@ -1,0 +1,1 @@
+import{j as n}from"./jsx-runtime.06adccda.js";import"./jsx-runtime.84cb2727.js";const i={"button-primary":"_button-primary_kth1k_1"},a=t=>n("button",{className:i["button-primary"],type:t.type,disabled:t.disabled,onClick:t.onClick,children:t.title});export{a as B};

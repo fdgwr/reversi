@@ -1,9 +1,9 @@
-interface Props {
+type Props = {
   action: string;
   method: string;
   autoComplete: string;
   children?: React.ReactNode;
-}
+};
 
 // サインアップとサインインで使用（入力欄とボタンの組み合わせ）
 const Form = (props: Props) => {

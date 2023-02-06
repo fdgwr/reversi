@@ -5,6 +5,7 @@ import {
   PASSWORD_CONFIRM,
   PASSWORD_CONFIRM_LABEL,
   PASSWORD_LABEL,
+  PASSWORD_PATTERN,
   SETTING_BUTTON,
   SETTING_PASSWORD,
   SETTING_PASSWORD_LABEL,
@@ -27,14 +28,14 @@ const Password = () => {
           title={PASSWORD_LABEL}
           name={SETTING_PASSWORD}
           type={TEXT}
-          value={""}
+          pattern={PASSWORD_PATTERN}
           onChange={() => console.log("")}
         />
         <TextInput
           title={PASSWORD_CONFIRM_LABEL}
           name={PASSWORD_CONFIRM}
           type={TEXT}
-          value={""}
+          pattern={PASSWORD_PATTERN}
           onChange={() => console.log("")}
         />
       </RoundFrame>

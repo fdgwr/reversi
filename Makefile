@@ -12,3 +12,5 @@ db migrate:
 	docker compose exec web bin/rails db:migrate
 respec:
 	docker compose exec web respec
+vite:
+	docker compose exec web bin/vite build

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import {
   BUTTON,
   EMAIL_LABEL,
+  EMAIL_PATTERN,
   FORGET_BUTTON,
   FORGET_PASSWORD,
   RESET_PASSWORD_LINK,
@@ -27,7 +28,7 @@ const ForgetPassword = () => {
           title={EMAIL_LABEL}
           name={FORGET_PASSWORD}
           type={TEXT}
-          value={""}
+          pattern={EMAIL_PATTERN}
           onChange={() => console.log("入力欄")}
         />
       </RoundFrame>

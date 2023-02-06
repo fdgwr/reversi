@@ -1,12 +1,12 @@
 import introTextInput from "@/assets/css/components/input.module.css";
 
-interface Props {
+type Props = {
   title: string;
   name: string; // サーバーサイドが受け取る時の変数名
   type: "text" | "email" | "password"; // text or passwordの二択
-  value: string; // 親から受け取るステート
+  pattern: string; // 正規表現
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // ステートを変更時の関数
-}
+};
 
 const IntroTextInput = (props: Props) => {
   return (
@@ -21,7 +21,8 @@ const IntroTextInput = (props: Props) => {
         className={introTextInput["intro-text-input"]}
         name={props.name}
         type={props.type}
-        value={props.value}
+        defaultValue=""
+        pattern={props.pattern}
         onChange={props.onChange}
       />
     </div>

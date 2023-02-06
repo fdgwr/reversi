@@ -6,6 +6,7 @@ import {
   EMAIL_CONFIRM,
   EMAIL_CONFIRM_LABEL,
   EMAIL_LABEL,
+  EMAIL_PATTERN,
   REGISTRATION_LABEL,
 } from "@/assets/message";
 import { Button, Form, Menu, RoundFrame, TextInput } from "@/components";
@@ -18,14 +19,14 @@ const SignUp = () => {
   return (
     <div className={style.container}>
       <h1>Reversi</h1>
-      <Menu />
+      <Menu isSignIn={false} isSignUp={true} />
       <RoundFrame className="round-frame_double">
         <Form action={""} method={""} autoComplete={""}>
           <TextInput
             title={EMAIL_LABEL}
             name={EMAIL}
             type={EMAIL}
-            value={""}
+            pattern={EMAIL_PATTERN}
             onChange={(event: React.ChangeEvent<HTMLInputElement>): void =>
               console.log(`メールアドレス：${event.target.value}`)
             }
@@ -34,7 +35,7 @@ const SignUp = () => {
             title={EMAIL_CONFIRM_LABEL}
             name={EMAIL_CONFIRM}
             type={EMAIL}
-            value={""}
+            pattern={EMAIL_PATTERN}
             onChange={(event: React.ChangeEvent<HTMLInputElement>): void =>
               console.log(`メールアドレス確認：${event.target.value}`)
             }

@@ -23,7 +23,7 @@ const Introduction = () => {
         title={SECRET_WORD_LABEL}
         name={SECRET_WORD}
         type={TEXT}
-        value={""}
+        pattern=""
         onChange={() => console.log("")}
       />
       <div className={`${style.commonContainer} ${style.introContainer}`}>
