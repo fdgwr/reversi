@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime.06adccda.js";import{R as e}from"./jsx-runtime.84cb2727.js";import{c as o}from"./client.423fa260.js";const r=document.getElementById("root"),c=()=>t("div",{children:"Reversi"});o.createRoot(r).render(t(e.StrictMode,{children:t(c,{...r==null?void 0:r.dataset})}));
