@@ -29,23 +29,16 @@ const Password = () => {
           name={SETTING_PASSWORD}
           type={TEXT}
           pattern={PASSWORD_PATTERN}
-          onChange={() => console.log("")}
         />
         <TextInput
           title={PASSWORD_CONFIRM_LABEL}
           name={PASSWORD_CONFIRM}
           type={TEXT}
           pattern={PASSWORD_PATTERN}
-          onChange={() => console.log("")}
         />
       </RoundFrame>
       <div className={style.commonContainer}>
-        <Button
-          title={SETTING_BUTTON}
-          type={BUTTON}
-          disabled={false}
-          onClick={() => console.log("")}
-        />
+        <Button title={SETTING_BUTTON} type={BUTTON} disabled={false} />
       </div>
     </div>
   );

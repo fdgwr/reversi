@@ -29,16 +29,10 @@ const ForgetPassword = () => {
           name={FORGET_PASSWORD}
           type={TEXT}
           pattern={EMAIL_PATTERN}
-          onChange={() => console.log("入力欄")}
         />
       </RoundFrame>
       <div className={style.commonContainer}>
-        <Button
-          title={FORGET_BUTTON}
-          type={BUTTON}
-          disabled={false}
-          onClick={() => console.log("ボタン")}
-        />
+        <Button title={FORGET_BUTTON} type={BUTTON} disabled={false} />
       </div>
     </div>
   );

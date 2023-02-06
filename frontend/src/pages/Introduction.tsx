@@ -24,21 +24,10 @@ const Introduction = () => {
         name={SECRET_WORD}
         type={TEXT}
         pattern=""
-        onChange={() => console.log("")}
       />
       <div className={`${style.commonContainer} ${style.introContainer}`}>
-        <Button
-          title={CREATE_ROOM_BUTTON}
-          type={BUTTON}
-          disabled={false}
-          onClick={() => console.log("")}
-        />
-        <Button
-          title={JOIN_ROOM_BUTTON}
-          type={BUTTON}
-          disabled={false}
-          onClick={() => console.log("")}
-        />
+        <Button title={CREATE_ROOM_BUTTON} type={BUTTON} disabled={false} />
+        <Button title={JOIN_ROOM_BUTTON} type={BUTTON} disabled={false} />
       </div>
     </div>
   );

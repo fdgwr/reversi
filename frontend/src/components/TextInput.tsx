@@ -6,7 +6,6 @@ type Props = {
   name: string; // サーバーサイドが受け取る時の変数名
   type: "text" | "email" | "password"; // text or passwordの二択
   pattern: string; // 正規表現
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // ステートを変更時の関数
 };
 
 // メールアドレスとパスワード用
@@ -21,8 +20,6 @@ const TextInput = (props: Props) => {
         name={props.name}
         type={props.type}
         defaultValue=""
-        
-        onChange={props.onChange}
       />
     </div>
   );

@@ -5,7 +5,6 @@ type Props = {
   title: string; // ボタンのタイトル
   type: "submit" | "button"; // ボタンのタイプ
   disabled: boolean; // 非活性化にするか否か
-  onClick: () => void; // クリック時のアクション
 };
 
 // ボタンの部品
@@ -15,7 +14,6 @@ const Button = (props: Props) => {
       className={button["button-primary"]}
       type={props.type}
       disabled={props.disabled}
-      onClick={props.onClick}
     >
       {props.title}
     </button>

@@ -1,4 +1,3 @@
-import React, { FormEventHandler } from "react";
 import ReactDOM from "react-dom/client";
 import {
   BUTTON,
@@ -13,6 +12,7 @@ import {
 } from "@/assets/message";
 import { Button, Form, Menu, RoundFrame, TextInput } from "@/components";
 import style from "@/assets/css/style.module.css";
+import React from "react";
 
 const element = document.getElementById("signIn");
 
@@ -29,18 +29,12 @@ const SignIn = () => {
             name={EMAIL}
             type={EMAIL}
             pattern={EMAIL_PATTERN}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-              console.log(`メールアドレス：${e.target.value}`)
-            }
           />
           <TextInput
             title={PASSWORD_LABEL}
             name={PASSWORD}
             type={PASSWORD}
             pattern={PASSWORD_PATTERN}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-              console.log(`パスワード${e.target.value}`)
-            }
           />
         </RoundFrame>
         <div className={style.commonContainer}>
@@ -48,7 +42,6 @@ const SignIn = () => {
             title={LOGIN_LABEL}
             type={BUTTON}
             disabled={false}
-            onClick={() => console.log("送信するよ！！")}
           />
         </div>
         <div className={style.link}>
