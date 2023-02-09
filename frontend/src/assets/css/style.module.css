@@ -1,0 +1,37 @@
+/* componentsディレクトリ以外のスタイルを下記に記述していく */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-flow: column;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.link {
+    text-align: center;
+}
+
+.intro {
+    margin-top: 70px
+}
+
+.commonContainer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introContainer {
+    width: 500px;
+    justify-content: space-between;
+}
+
+.commonLabel {
+    font-size: 32px;
+}

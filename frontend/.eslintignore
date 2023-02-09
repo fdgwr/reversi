@@ -1,0 +1,8 @@
+# ESLintの対処にならないように設定する。
+build/
+public/
+**/coverage/
+**/node_modules/
+**/*.min.js
+*.config.js
+.*lintrc.js

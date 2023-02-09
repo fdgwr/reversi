@@ -1,0 +1,21 @@
+.round-frame_double {
+    height: 377px;
+    width: 881px;
+    background-color: #FFF5E1;
+    border-radius: 10px;
+}
+
+.round-frame_single {
+    height: 237px;
+    width: 881px;
+    background-color: #FFF5E1;
+    border-radius: 10px;
+}
+
+.corner-frame {
+    background-color: #43E195;
+}
+
+.corner-frame-mini {
+    background-color: #FFF5E1;
+}

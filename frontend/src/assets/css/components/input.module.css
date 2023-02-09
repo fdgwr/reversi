@@ -1,0 +1,38 @@
+.text-input-container {
+    display: flex;
+    padding: 60px;
+}
+
+.text-input {
+    height: 67px;
+    width: 530px;
+    padding-left: 5px;
+    font-size: 22px;
+}
+
+.text-input-label {
+    font-size: 22px;
+    padding-top: 10px;
+    height: 65px;
+    width: 238px;
+}
+
+
+.intro-text-input-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro-text-input {
+    height: 67px;
+    width: 530px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.intro-text-input-label {
+    font-size: 22px;
+}

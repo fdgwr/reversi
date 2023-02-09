@@ -14,8 +14,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "frontend/src/*"
+      ]
+    }
   },
-  "include": ["src"],
+  "include": ["frontend/src", "frontend/src/vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

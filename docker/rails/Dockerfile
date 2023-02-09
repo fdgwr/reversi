@@ -4,8 +4,12 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libpq-dev \
     nodejs \
+    npm \
     default-mysql-client \
     yarn
+
+RUN npm install n -g
+RUN n 16.15
 
 WORKDIR /myapp
 
