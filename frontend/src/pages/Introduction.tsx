@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import { Button, IntroTextInput, RoundFrame } from "@/components";
+import { Button, Form, IntroTextInput, RoundFrame } from "@/components";
 import style from "@/assets/css/style.module.css";
 import {
   BUTTON,
@@ -11,24 +11,39 @@ import {
   TEXT,
 } from "@/assets/message";
 
-const element = document.getElementById("introduction");
+const element = document.getElementById("intro");
 
 const Introduction = () => {
+  // ボタンに応じてアクションのURLを変更する。
+  const [action, setAction] = useState<string>("");
+
   return (
     <div className={`${style.container} ${style.intro}`}>
       <RoundFrame className="round-frame_double">
         <p>ルール説明？</p>
       </RoundFrame>
-      <IntroTextInput
-        title={SECRET_WORD_LABEL}
-        name={SECRET_WORD}
-        type={TEXT}
-        pattern=""
-      />
-      <div className={`${style.commonContainer} ${style.introContainer}`}>
-        <Button title={CREATE_ROOM_BUTTON} type={BUTTON} disabled={false} />
-        <Button title={JOIN_ROOM_BUTTON} type={BUTTON} disabled={false} />
-      </div>
+      <Form action={action} method={""} autoComplete={""}>
+        <IntroTextInput
+          title={SECRET_WORD_LABEL}
+          name={SECRET_WORD}
+          type={TEXT}
+          pattern=""
+        />
+        <div className={`${style.commonContainer} ${style.introContainer}`}>
+          <Button
+            title={CREATE_ROOM_BUTTON}
+            type={BUTTON}
+            disabled={false}
+            onClick={() => setAction("")}
+          />
+          <Button
+            title={JOIN_ROOM_BUTTON}
+            type={BUTTON}
+            disabled={false}
+            onClick={() => setAction("")}
+          />
+        </div>
+      </Form>
     </div>
   );
 };

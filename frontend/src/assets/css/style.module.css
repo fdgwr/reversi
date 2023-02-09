@@ -16,10 +16,6 @@ h1 {
     text-align: center;
 }
 
-.intro {
-    margin-top: 70px
-}
-
 .commonContainer {
     height: 200px;
     display: flex;
@@ -27,11 +23,14 @@ h1 {
     justify-content: center;
 }
 
-.introContainer {
-    width: 500px;
-    justify-content: space-between;
-}
-
 .commonLabel {
     font-size: 32px;
+}
+
+.intro {
+    margin-top: 70px
+}
+
+.introContainer {
+    justify-content: space-between;
 }

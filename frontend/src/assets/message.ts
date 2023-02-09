@@ -21,6 +21,7 @@ export const EMAIL = "email";
 export const PASSWORD = "password";
 export const TEXT = "text";
 export const BUTTON = "button";
+export const SUBMIT = "submit";
 
 export const EMAIL_CONFIRM = "email-confirm";
 export const FORGET_PASSWORD = "forget-password";

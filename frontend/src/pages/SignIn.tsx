@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom/client";
 import {
-  BUTTON,
   EMAIL,
   EMAIL_LABEL,
   EMAIL_PATTERN,
@@ -9,6 +8,7 @@ import {
   PASSWORD_LABEL,
   PASSWORD_PATTERN,
   RESET_PASSWORD_LINK,
+  SUBMIT,
 } from "@/assets/message";
 import { Button, Form, Menu, RoundFrame, TextInput } from "@/components";
 import style from "@/assets/css/style.module.css";
@@ -38,11 +38,7 @@ const SignIn = () => {
           />
         </RoundFrame>
         <div className={style.commonContainer}>
-          <Button
-            title={LOGIN_LABEL}
-            type={BUTTON}
-            disabled={false}
-          />
+          <Button title={LOGIN_LABEL} type={SUBMIT} disabled={false} />
         </div>
         <div className={style.link}>
           <a href={"/forget-password"}>{RESET_PASSWORD_LINK}</a>
